@@ -20,8 +20,7 @@ givenName = givenName;
 // 4.
 // What is `greeting` set to?
 var greeting = "Hello, how are you? " + givenName;
-// A:undefined (hello,how are you? + givenName aka a string plus a undefined)
-
+// A: Hello, how are you? Tim
 
 // 5.
 // What is `math` set to?
@@ -34,8 +33,7 @@ var math = high - low;
 // 6.
 // What is `math` set to?
 math = high - "5";
-// A:undefined(50 -"5" aka a number - a string)
-
+// A:45
 
 // 7.
 // Create a variable to calculate Tim's age
@@ -43,8 +41,7 @@ math = high - "5";
 // The answer shoud not be written in a comment.
 var born = 1984;
 var today = 2017;
-// A:givenName = today - born
-
+var timsAge = givenName + " is " + (today - born) + " years old";
 
 // 8.
 // Adjust this code. Store some information in the following variables.
@@ -66,11 +63,11 @@ var statement = yourName + " is taking a class at The Iron Yard, my instructor's
 // 10.
 // We've created a variable named after each primitive type.
 // Use the `=` operator to assign a value to each variable matching the type in the name.
-var myNumber = 22
-var myString ="Braxton"
-var myBoolean =
+var myNumber = 22;
+var myString ="Braxton";
+var myBoolean = true;
 // This one's a little tricky - think carefully about what makes a value "undefined"!
-var myUndefined = undefined
+var myUndefined = undefined;
 // A:
 
 
@@ -103,7 +100,7 @@ var b = (undefined == undefined);
 
 // 16.
 var c = (undefined == null);
-// A. False
+// A. True
 
 
 // 17.
@@ -127,7 +124,7 @@ var f = (NaN == NaN);
 // A:
 var thirsty = true;
 
-{
+if (thirsty) {
   console.log("I'm parched!");
 } else {
   console.log("I've had enough to drink.");
